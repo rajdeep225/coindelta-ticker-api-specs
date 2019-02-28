@@ -5,7 +5,7 @@ Get 24 hours trading activity for all trading pairs.
 HTTP Request:
 
 ```
-GET https://www.coindelta.com/api/v2/public/pricetickers/
+GET https://api.coindelta.com/api/v2/public/pricetickers/
 ```
 
 Response:
@@ -27,7 +27,7 @@ A JSON of price data objects for all trading pairs
 
 ## Example
 
-> curl https://www.coindelta.com/api/v2/public/pricetickers/
+> curl https://api.coindelta.com/api/v2/public/pricetickers/
 
 Response (200):
 
@@ -38,6 +38,8 @@ Response (200):
     "isFrozen":"0",
     "quoteVolume":"10166385.8891",      // in INR (Rs.)
     "baseVolume":"25.08366882"          // in BTC
+    "bestBidQty":"1.082"                // in BTC
+    "bestAskQty":"1.0"                  // in BTC
     "highestBid":"412000.0",            // in INR
     "lowestAsk":"419000.0",             // in INR
     "last":"405299.0",                  // in INR
@@ -50,6 +52,8 @@ Response (200):
     "isFrozen":"0",
     "quoteVolume":"2219830.70702",      // in INR (Rs.)
     "baseVolume":"59592.7706582"        // in XRP
+    "bestBidQty":"59.2"                 // in XRP
+    "bestAskQty":"595.82"               // in XRP
     "highestBid":"37.5",                // in INR
     "lowestAsk":"37.93",
     "last":"37.25",
